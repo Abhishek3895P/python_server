@@ -48,8 +48,8 @@ server_socket.listen()
 print(f"[ {Colors.BRIGHT_GREEN}#{Colors.RESET} ] Server started in {Colors.BRIGHT_YELLOW}{host}{Colors.RESET}:{Colors.BRIGHT_YELLOW}{port}{Colors.RESET}.")
 
 
-
-client_socket, addr = server_socket.accept()
-print()
-print(f"[ {Colors.BRIGHT_GREEN}#{Colors.RESET} ] New clint connected from .")
+while True:
+    client_socket, addr = server_socket.accept()
+    print()
+    print(f"[ {Colors.BRIGHT_GREEN}#{Colors.RESET} ] New clint connected from .")
        
